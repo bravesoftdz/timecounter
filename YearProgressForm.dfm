@@ -3,8 +3,8 @@ object YearProgressForm1: TYearProgressForm1
   Top = 40
   BorderStyle = bsNone
   Caption = #1043#1086#1076#1086#1074#1072#1103' '#1087#1088#1086#1090#1103#1078#1077#1085#1085#1086#1089#1090#1100' DMIT Computers'
-  ClientHeight = 264
-  ClientWidth = 434
+  ClientHeight = 266
+  ClientWidth = 449
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -975,39 +975,23 @@ object YearProgressForm1: TYearProgressForm1
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object TodayDateLabel: TLabel
-    Left = 0
-    Top = 34
-    Width = 434
-    Height = 23
-    Align = alTop
-    AutoSize = False
-    Caption = '  '#1057#1045#1043#1054#1044#1053#1071
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = 6710886
-    Font.Height = -12
-    Font.Name = 'Roboto'
-    Font.Style = [fsBold]
-    ParentFont = False
-    Layout = tlCenter
-  end
   object Label1: TLabel
-    Left = 284
+    Left = 286
     Top = 71
-    Width = 70
+    Width = 68
     Height = 23
     Caption = #1087#1088#1086#1096#1083#1086
-    Color = clBtnFace
+    Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 7372329
     Font.Height = -19
-    Font.Name = 'Roboto'
+    Font.Name = 'Tahoma'
     Font.Style = []
     ParentColor = False
     ParentFont = False
   end
   object DaysCountLabel: TLabel
-    Left = 240
+    Left = 242
     Top = 100
     Width = 165
     Height = 53
@@ -1017,21 +1001,21 @@ object YearProgressForm1: TYearProgressForm1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 7372329
     Font.Height = -48
-    Font.Name = 'Roboto'
+    Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     Layout = tlCenter
   end
   object Label2: TLabel
-    Left = 374
+    Left = 376
     Top = 124
-    Width = 31
+    Width = 21
     Height = 25
     Caption = '%'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 7372329
     Font.Height = -21
-    Font.Name = 'Roboto'
+    Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
   end
@@ -1041,14 +1025,26 @@ object YearProgressForm1: TYearProgressForm1
     Width = 65
     Height = 13
     AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object HundredPercentLabel: TLabel
-    Left = 344
+    Left = 359
     Top = 207
     Width = 82
     Height = 13
     Alignment = taRightJustify
     AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object Image1: TImage
     Left = 40
@@ -1064,7 +1060,7 @@ object YearProgressForm1: TYearProgressForm1
     Stretch = True
   end
   object Image2: TImage
-    Left = 392
+    Left = 406
     Top = 221
     Width = 1
     Height = 16
@@ -1079,14 +1075,20 @@ object YearProgressForm1: TYearProgressForm1
   object Label3: TLabel
     Left = 218
     Top = 175
-    Width = 76
+    Width = 75
     Height = 13
     Caption = #1055#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1074':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 434
+    Width = 449
     Height = 34
     Align = alTop
     BevelOuter = bvNone
@@ -1101,31 +1103,42 @@ object YearProgressForm1: TYearProgressForm1
     ShowCaption = False
     TabOrder = 0
     OnMouseDown = Panel2MouseDown
+    ExplicitWidth = 434
     object Label4: TLabel
       Left = 8
       Top = 5
-      Width = 374
+      Width = 389
       Height = 23
       AutoSize = False
       Caption = #1043#1086#1076#1086#1074#1072#1103' '#1087#1088#1086#1090#1103#1078#1077#1085#1085#1086#1089#1090#1100' DMIT Computers'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Layout = tlCenter
       OnMouseDown = Label4MouseDown
     end
     object Panel3: TPanel
-      Left = 405
+      Left = 420
       Top = 0
       Width = 29
       Height = 34
       Align = alRight
       BevelOuter = bvNone
+      Color = 7372329
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Height = -19
       Font.Name = 'Material Icons'
       Font.Style = [fsBold]
+      ParentBackground = False
       ParentFont = False
       ShowCaption = False
       TabOrder = 0
       OnClick = Panel3Click
+      ExplicitLeft = 405
       object Image7: TImage
         Left = 0
         Top = 0
@@ -1146,26 +1159,30 @@ object YearProgressForm1: TYearProgressForm1
           504E269414095A82CF021B20DE0FC42718F0A716982533803893D42072815A80
           372932408A951D0C90244C92051483510B462D18B5800E16000060C4A0BFC36F
           607F0000000049454E44AE426082}
+        Transparent = True
         ExplicitLeft = -1
         ExplicitWidth = 12
       end
     end
     object Panel4: TPanel
-      Left = 388
+      Left = 403
       Top = 0
       Width = 17
       Height = 34
       Align = alRight
       BevelOuter = bvNone
+      Color = 7372329
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Height = -19
       Font.Name = 'Material Icons'
       Font.Style = [fsBold]
+      ParentBackground = False
       ParentFont = False
       ShowCaption = False
       TabOrder = 1
       OnClick = Panel4Click
+      ExplicitLeft = 388
       object Image6: TImage
         Left = 0
         Top = 0
@@ -1182,6 +1199,7 @@ object YearProgressForm1: TYearProgressForm1
           5048FE4F7EFDBC88B8977900000000809F81B43F6DE8D502143D1B80AE470B10
           F6A74DBD59806B0100000000DC680141E16BBD5501C0BA0000000049454E44AE
           426082}
+        Transparent = True
         ExplicitLeft = -1
         ExplicitWidth = 12
       end
@@ -1190,20 +1208,20 @@ object YearProgressForm1: TYearProgressForm1
   object YearProgressBar: TProgressBar
     Left = 40
     Top = 237
-    Width = 353
+    Width = 367
     Height = 17
     TabOrder = 1
   end
   object Calendar1: TCalendar
     Left = 24
-    Top = 63
+    Top = 71
     Width = 177
-    Height = 134
+    Height = 126
     BorderStyle = bsNone
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
-    Font.Name = 'Roboto'
+    Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     StartOfWeek = 0
@@ -1212,20 +1230,274 @@ object YearProgressForm1: TYearProgressForm1
   object RadioButton1: TRadioButton
     Left = 300
     Top = 173
-    Width = 76
+    Width = 82
     Height = 17
     Caption = #1087#1088#1086#1094#1077#1085#1090#1072#1093
     Checked = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     TabStop = True
   end
   object RadioButton2: TRadioButton
     Left = 382
     Top = 173
-    Width = 41
+    Width = 59
     Height = 17
     Caption = #1076#1085#1103#1093
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 58
+    Width = 449
+    Height = 208
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    Color = 6052956
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 5
+    Visible = False
+    ExplicitTop = 34
+    ExplicitHeight = 251
+    object YearNameLabel: TLabel
+      Left = 8
+      Top = 13
+      Width = 161
+      Height = 16
+      AutoSize = False
+      Caption = #1043#1086#1076
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object MonthNameLabel: TLabel
+      Left = 8
+      Top = 55
+      Width = 161
+      Height = 16
+      AutoSize = False
+      Caption = #1052#1077#1089#1103#1094
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object WeekNameLabel: TLabel
+      Left = 8
+      Top = 97
+      Width = 161
+      Height = 16
+      AutoSize = False
+      Caption = #1053#1077#1076#1077#1083#1103
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DaysCountLabel2: TLabel
+      Left = 300
+      Top = 13
+      Width = 141
+      Height = 16
+      Alignment = taRightJustify
+      AutoSize = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 12242022
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object WeekPercentsLabel: TLabel
+      Left = 300
+      Top = 96
+      Width = 141
+      Height = 16
+      Alignment = taRightJustify
+      AutoSize = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 12242022
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object MonthPercentsLabel: TLabel
+      Left = 300
+      Top = 55
+      Width = 141
+      Height = 16
+      Alignment = taRightJustify
+      AutoSize = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 12242022
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object YearProgressBar2: TProgressBar
+      Left = 8
+      Top = 32
+      Width = 433
+      Height = 17
+      TabOrder = 0
+    end
+    object MonthProgressBar: TProgressBar
+      Left = 8
+      Top = 74
+      Width = 433
+      Height = 17
+      TabOrder = 1
+    end
+    object WeekProgressBar: TProgressBar
+      Left = 8
+      Top = 116
+      Width = 433
+      Height = 17
+      TabOrder = 2
+    end
+    object CloseButton2: TButton
+      Left = 359
+      Top = 173
+      Width = 86
+      Height = 25
+      Caption = #1047#1072#1082#1088#1099#1090#1100
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = CloseButton2Click
+    end
+    object Panel5: TPanel
+      Left = 344
+      Top = 171
+      Width = 101
+      Height = 27
+      Alignment = taRightJustify
+      BevelOuter = bvNone
+      Caption = #1047#1040#1050#1056#1067#1058#1068'    '
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 12242022
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+    end
+  end
+  object Panel6: TPanel
+    Left = 0
+    Top = 34
+    Width = 449
+    Height = 24
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Panel6'
+    Color = 15987699
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 6
+    object TodayDateLabel: TLabel
+      Left = 0
+      Top = 0
+      Width = 382
+      Height = 24
+      AutoSize = False
+      Caption = '  '#1057#1045#1043#1054#1044#1053#1071
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6710886
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Layout = tlCenter
+    end
+    object Image4: TImage
+      Left = 419
+      Top = 0
+      Width = 30
+      Height = 24
+      Cursor = crHandPoint
+      Hint = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077' "'#1043#1086#1076#1086#1074#1072#1103' '#1087#1088#1086#1090#1103#1078#1077#1085#1085#1086#1089#1090#1100'"'
+      Align = alRight
+      Center = True
+      ParentShowHint = False
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+        00180806000000E0773DF8000000017352474200AECE1CE90000000467414D41
+        0000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000001
+        A44944415478DAC595BF4BC35010C7EFA2433775101C5D04FB43107474707071
+        70AFA0BB9B89D041B0ED6BEB2028269DFC0374707014142C38E858B1A2268B83
+        83A3839375F19D979442A3697D4D53FD2E8F3C78F7B9F7BD7B172422E8A7F0DF
+        0193429F4709D3803883C42B8B106A4074A369547D14E5EB508084301648C22E
+        6223683BF1F11A6A90B185595106C473BACE0B07C741652F88B276D1DAFE1590
+        C8196B807010CAF000880FD0B085CEBACAFC3B03E59223CAA7818078CEB8EDE4
+        B95D30D14B246FB4ED0C8EF754D786A79E85F8F00192627D8E48BBEA949D0AC0
+        9394AB76A97CE403B885656BCCB0D6F86E01B4E714AC8C1F90370E39BD954800
+        44E74ED15AF401B87BEEB97B52915844F4CADD34FAB700158B54018116A91459
+        1910546477A8698497915814D4A68D5B44F1D0E0A5AE0D4DFC7868DE411E157C
+        BF0BE8412471D929ED1F37BF03869DBEC5B3BF1432FC8E5DB0365B7702C73543
+        0443F2BD066F0B7015CF6EA401A5C99D35D6312C7BCE2334D36A8B12C0D5B810
+        B1D8E75B9AFF5849AE4D8A2B3CEB0505A8F2A37C404977EF032327CD82760D88
+        427D077C0163E213E0605675000000000049454E44AE426082}
+      ShowHint = True
+      OnClick = Image4Click
+      ExplicitLeft = 388
+    end
+    object Image3: TImage
+      Left = 389
+      Top = 0
+      Width = 30
+      Height = 24
+      Cursor = crHandPoint
+      Hint = #1055#1086#1082#1072#1079#1072#1090#1100' '#1089#1090#1072#1090#1080#1089#1090#1080#1082#1091
+      Align = alRight
+      Center = True
+      ParentShowHint = False
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+        00180806000000E0773DF8000000017352474200AECE1CE90000000467414D41
+        0000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000000
+        BD4944415478DA63FCFFFF3F032D01E3A0B140B3A1C8E23FC33F0E18FF3F03F3
+        8B9B0DBD37A86681565DE17D0646060524A105D71AFB13472D180116A837146B
+        30FFFF578EACF62F2353272C85516C8146438103D37FC6FDC86AFF31FE77BCD1
+        30E100FD2DD06EC8B7F9FB975105C6676666FC72B5A17F0DD52CD0AA2F9C0FA4
+        12E002FF191E5C6BEA571CB560D482916481666D610A23138335C2FCFF6FAE37
+        4E2805CBD517743332308AC0E5FE311CBDDEDC3F876A6511B960E85B000037F7
+        51E080724C020000000049454E44AE426082}
+      ShowHint = True
+      OnClick = Image3Click
+      ExplicitLeft = 419
+      ExplicitTop = 1
+      ExplicitHeight = 23
+    end
   end
   object Timer1: TTimer
     Interval = 300

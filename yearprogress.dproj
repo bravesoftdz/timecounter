@@ -1,4 +1,4 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{753EE8CE-C1AE-4632-AA7E-6574FE3FD47C}</ProjectGuid>
         <ProjectVersion>18.6</ProjectVersion>
@@ -106,6 +106,10 @@
         </DelphiCompile>
         <DCCReference Include="YearProgressForm.pas">
             <Form>YearProgressForm1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="AboutProgram.pas">
+            <Form>AboutProgram1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

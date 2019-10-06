@@ -5,12 +5,11 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
-  Vcl.ExtCtrls, StrUtils, Registry, ActiveX, ComObj;
+  Vcl.ExtCtrls, StrUtils, Registry, ActiveX, ComObj, ShellApi;
 
 
 type
   TAboutProgram1 = class(TForm)
-    StaticText1: TStaticText;
     StaticText2: TStaticText;
     Button1: TButton;
     Image1: TImage;
@@ -20,6 +19,11 @@ type
     Panel3: TPanel;
     Image7: TImage;
     Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Image3: TImage;
+    Label4: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormActivate(Sender: TObject);
@@ -28,6 +32,7 @@ type
       Shift: TShiftState; X, Y: Integer);
     procedure Panel2MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
+    procedure Label2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -87,12 +92,18 @@ YearProgressForm1.Enabled:=True;
 YearProgressForm1.Show;
 end;
 
+procedure TAboutProgram1.Label2Click(Sender: TObject);
+begin
+ ShellExecute(0, 'open', PChar('http://progressbarserver.appspot.com/'), nil, nil, SW_SHOWNORMAL);
+end;
+
 procedure TAboutProgram1.Label7MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
  ReleaseCapture;
  AboutProgram1.perform(WM_SysCommand,$F012,0);
 end;
+
 
 procedure TAboutProgram1.Panel2MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);

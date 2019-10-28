@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2019.10.02 18:20:10.933,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
-    <Transaction>2019.10.02 18:21:42.091,=C:\Users\Дмитрий\Documents\YearProgress\YearProgressForm.pas</Transaction>
-    <Transaction>2019.10.02 18:23:33.088,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
-    <Transaction>2019.10.02 19:59:11.419,C:\Users\Дмитрий\Documents\YearProgress\yearprogress.dproj=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.162,=C:\Users\Дмитрий\Documents\YearProgress\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.549,=C:\Users\Дмитрий\Documents\YearProgress\AboutProgram.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.091,=C:\Users\Дмитрий\Documents\YearProgress\YearProgressForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.933,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.802,=C:\Users\Дмитрий\Documents\YearProgress\Win32\Debug\styles\material.vsf</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,C:\Users\Дмитрий\Documents\YearProgress\yearprogress.dproj=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.088,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2019.10.26 18:03:01.032,=C:\Users\Дмитрий\Documents\YearProgress\Unit1.pas</Transaction>
+    <Transaction>2019.10.26 19:29:36.420,C:\Users\Дмитрий\Documents\YearProgress\TimeCounterUnit.pas=C:\Users\Дмитрий\Documents\YearProgress\Unit1.pas</Transaction>
+    <Transaction>2019.10.26 19:29:36.420,C:\Users\Дмитрий\Documents\YearProgress\TimeCounterUnit.dfm=C:\Users\Дмитрий\Documents\YearProgress\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

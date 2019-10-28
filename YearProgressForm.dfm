@@ -972,14 +972,18 @@ object YearProgressForm1: TYearProgressForm1
     000000000000}
   OldCreateOrder = False
   Position = poDesigned
+  OnActivate = FormActivate
   OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
     Left = 311
-    Top = 87
+    Top = 95
     Width = 68
     Height = 23
+    Alignment = taCenter
     Caption = #1087#1088#1086#1096#1083#1086
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
@@ -992,7 +996,7 @@ object YearProgressForm1: TYearProgressForm1
   end
   object DaysCountLabel: TLabel
     Left = 267
-    Top = 116
+    Top = 124
     Width = 165
     Height = 53
     Alignment = taCenter
@@ -1008,7 +1012,7 @@ object YearProgressForm1: TYearProgressForm1
   end
   object Label2: TLabel
     Left = 401
-    Top = 140
+    Top = 149
     Width = 21
     Height = 25
     Caption = '%'
@@ -1022,7 +1026,7 @@ object YearProgressForm1: TYearProgressForm1
   object OnePercentLabel: TLabel
     Left = 8
     Top = 223
-    Width = 65
+    Width = 73
     Height = 13
     AutoSize = False
     Font.Charset = DEFAULT_CHARSET
@@ -1072,19 +1076,6 @@ object YearProgressForm1: TYearProgressForm1
       0049454E44AE426082}
     Stretch = True
   end
-  object Label3: TLabel
-    Left = 252
-    Top = 191
-    Width = 75
-    Height = 13
-    Caption = #1055#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1074':'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object Panel2: TPanel
     Left = 0
     Top = 0
@@ -1103,14 +1094,13 @@ object YearProgressForm1: TYearProgressForm1
     ShowCaption = False
     TabOrder = 0
     OnMouseDown = Panel2MouseDown
-    ExplicitWidth = 449
     object Label4: TLabel
       Left = 8
       Top = 5
       Width = 429
       Height = 23
       AutoSize = False
-      Caption = #1043#1086#1076#1086#1074#1072#1103' '#1087#1088#1086#1090#1103#1078#1077#1085#1085#1086#1089#1090#1100' DMIT Computers'
+      Caption = #1057#1095#1077#1090#1095#1080#1082' '#1074#1088#1077#1084#1077#1085#1080' DMIT Computers'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Height = -19
@@ -1138,7 +1128,6 @@ object YearProgressForm1: TYearProgressForm1
       ShowCaption = False
       TabOrder = 0
       OnClick = Panel3Click
-      ExplicitLeft = 420
       object Image7: TImage
         Left = 0
         Top = 0
@@ -1182,7 +1171,6 @@ object YearProgressForm1: TYearProgressForm1
       ShowCaption = False
       TabOrder = 1
       OnClick = Panel4Click
-      ExplicitLeft = 403
       object Image6: TImage
         Left = 0
         Top = 0
@@ -1227,36 +1215,6 @@ object YearProgressForm1: TYearProgressForm1
     StartOfWeek = 0
     TabOrder = 2
   end
-  object RadioButton1: TRadioButton
-    Left = 334
-    Top = 189
-    Width = 82
-    Height = 17
-    Caption = #1087#1088#1086#1094#1077#1085#1090#1072#1093
-    Checked = True
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 3
-    TabStop = True
-  end
-  object RadioButton2: TRadioButton
-    Left = 416
-    Top = 189
-    Width = 52
-    Height = 17
-    Caption = #1076#1085#1103#1093
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 4
-  end
   object Panel6: TPanel
     Left = 0
     Top = 34
@@ -1268,16 +1226,15 @@ object YearProgressForm1: TYearProgressForm1
     Color = 15987699
     ParentBackground = False
     ShowCaption = False
-    TabOrder = 5
-    ExplicitWidth = 449
+    TabOrder = 3
     object TodayDateLabel: TLabel
       Left = 0
       Top = 0
-      Width = 382
+      Width = 363
       Height = 24
       AutoSize = False
       Caption = '  '#1057#1045#1043#1054#1044#1053#1071
-      Color = clWhite
+      Color = 15987699
       Font.Charset = DEFAULT_CHARSET
       Font.Color = 6710886
       Font.Height = -12
@@ -1316,11 +1273,85 @@ object YearProgressForm1: TYearProgressForm1
         B1D8E75B9AFF5849AE4D8A2B3CEB0505A8F2A37C404977EF032327CD82760D88
         427D077C0163E213E0605675000000000049454E44AE426082}
       ShowHint = True
+      Transparent = True
       OnClick = Image4Click
       ExplicitLeft = 388
     end
-    object Image3: TImage
+    object Image5: TImage
       Left = 429
+      Top = 0
+      Width = 30
+      Height = 24
+      Cursor = crHandPoint
+      Hint = #1053#1072#1089#1090#1088#1086#1081#1082#1080
+      Align = alRight
+      Center = True
+      ParentShowHint = False
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+        00180806000000E0773DF8000000017352474200AECE1CE90000000467414D41
+        0000B18F0BFC6105000000097048597300000EC200000EC20115284A80000002
+        614944415478DACD943F68137114C7DFFB91D22A013B15C70A0E5E6AC141C16E
+        193A74111C14CC2056B0D8A2853BED50D1E47E970C160ACD9556E2A0B452C16C
+        752828D84170D0A160419A2BE8D0B1382520584CFA7BBEC3A6BDCB5DD26852F0
+        BBE4F8E5F7DEE7FDFD2111C1510AFF0B8096BC770D05BDF29E91C2849399C9B7
+        0510338D39FEB9EB0300BC74ACECF5F66490D2DF20E290EF90E853216D0FFC35
+        40338D250E2FCA257981505E25D5314180F71121EAF74F15409C52286605542E
+        82C21BEEB993B6AFD605C4A47E1908970F4DA98194A29B9B197B3100E895B2EB
+        982A7EE1529C6E05C0FEB63B0568EBD22EFA005ACA98E4323CAE6F095B80B0B2
+        E764A861204416F747FA00B194314A40736C1809B1C823964736E4931FD56C8F
+        5329C79FC3211954B8CC634E26FB2CA407C620295A62C8496FE4287EF5579D57
+        159732F25D953E7356670F9C4351084C6CC899B7811EEC4352BAE4E9300FFCD3
+        53C7B2C7C22AA199FA34024E8495A669006BBE6065C7C3003153E79EE164D380
+        3EA99FE3276099D3EEF5D4F4DB4FD1DDBF25E54EB044C58F1CCC79CFDD6D1278
+        695366D702803E695C510A166A176A4F8B3D7862E4BD94957DE7549AE64F3D38
+        0FB40302120569BFF601B8348F389A0CD4115F5BE7DBAB7F8C20EE8D3CE4F654
+        C1B21FD4647027AA54C757DF04FD83DC49EA14742AB068AECE24F5611EB385D6
+        006ADC49CFCE077A50156FF40704EAE2BF9E47C4EE4A99C4439ED55B610BE83E
+        D98494845D880B84DB7C14E911DD03D55E8502C2C4CFF53B060CD684BAC62379
+        E130DBE600A69EE3851AAD893FCF8D4CB405E0BE53BC1BB946B56E09D08A8E1C
+        F01BAB954AE0AFBA6E220000000049454E44AE426082}
+      ShowHint = True
+      Transparent = True
+      OnClick = Image5Click
+      ExplicitLeft = 419
+      ExplicitTop = 1
+      ExplicitHeight = 23
+    end
+    object Image8: TImage
+      Left = 399
+      Top = 0
+      Width = 30
+      Height = 24
+      Cursor = crHandPoint
+      Hint = #1057#1088#1072#1074#1085#1077#1085#1080#1077' '#1076#1072#1090
+      Align = alRight
+      Center = True
+      ParentShowHint = False
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+        00180806000000E0773DF8000000017352474200AECE1CE90000000467414D41
+        0000B18F0BFC6105000000097048597300000EC000000EC0016AD68909000001
+        4D4944415478DA63FCFFFF3F032D01E3F0B540ABA12080E11F83011B13C3840B
+        0D133E6053A3515B90C0C4C8A070AD694203E916D417CE075209FF18FF2BDE68
+        98F000AB9ABAC2FD0C8C0C0ED71AFB1989B640A3A1D084E93F433C50DC839191
+        510548AF01D25FB06986AA91003217FCFFC7B8539C996FCD8186863F382D506F
+        281661FEF7F7310323230739E1FDEFDFFFC41BCD1316E0B440AB363F86818969
+        31398643C102607025E2B4001C694C8CF3696FC17F860740EE03E2CDFDCF010C
+        560B122CF8DF882FE9A1038D860205A6FF8CF749B60096CEE10A98182E5C6B98
+        B0816A16C0D239BE301EB580B616301009469005E03AE03FE37A604E3E00CC9D
+        0789B500988BF981640150CF9C6B8D1352715AA0D0D0C0C1F9EFE36D46460619
+        A20D8702A0397FFE3331B802EB8E03382D8059C2CDF0D1E7EFDFFF3CA458C0C6
+        FC6FCFA586494F303C37E42B7D0092513DE03266F1D50000000049454E44AE42
+        6082}
+      ShowHint = True
+      Transparent = True
+      OnClick = Image8Click
+      ExplicitLeft = 424
+      ExplicitTop = 6
+    end
+    object Image3: TImage
+      Left = 369
       Top = 0
       Width = 30
       Height = 24
@@ -1341,10 +1372,10 @@ object YearProgressForm1: TYearProgressForm1
         4E2805CBD517743332308AC0E5FE311CBDDEDC3F876A6511B960E85B000037F7
         51E080724C020000000049454E44AE426082}
       ShowHint = True
+      Transparent = True
       OnClick = Image3Click
-      ExplicitLeft = 419
-      ExplicitTop = 1
-      ExplicitHeight = 23
+      ExplicitLeft = 424
+      ExplicitTop = 6
     end
   end
   object Panel1: TPanel
@@ -1358,9 +1389,8 @@ object YearProgressForm1: TYearProgressForm1
     Color = 6052956
     ParentBackground = False
     ShowCaption = False
-    TabOrder = 6
+    TabOrder = 4
     Visible = False
-    ExplicitTop = 58
     object YearNameLabel: TLabel
       Left = 8
       Top = 13
@@ -1544,12 +1574,14 @@ object YearProgressForm1: TYearProgressForm1
       Alignment = taRightJustify
       BevelOuter = bvNone
       Caption = #1047#1040#1050#1056#1067#1058#1068'    '
+      Color = 6052956
       Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = 12242022
       Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
+      ParentBackground = False
       ParentFont = False
       TabOrder = 4
     end
@@ -1561,31 +1593,498 @@ object YearProgressForm1: TYearProgressForm1
       TabOrder = 5
     end
     object DayProgressBar2: TProgressBar
-      Left = 267
+      Left = 266
       Top = 157
-      Width = 214
+      Width = 215
       Height = 17
       TabOrder = 6
     end
   end
+  object Panel7: TPanel
+    Left = 0
+    Top = 0
+    Width = 489
+    Height = 284
+    Align = alCustom
+    BevelOuter = bvNone
+    Caption = 'Panel7'
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    ShowCaption = False
+    TabOrder = 5
+    Visible = False
+    object Label5: TLabel
+      Left = 8
+      Top = 40
+      Width = 113
+      Height = 13
+      AutoSize = False
+      Caption = #1048#1053#1058#1045#1056#1060#1045#1049#1057
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 7372329
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 8
+      Top = 59
+      Width = 473
+      Height = 18
+      AutoSize = False
+      Caption = #1071#1079#1099#1082' '#1087#1088#1086#1075#1088#1072#1084#1084#1099
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 8
+      Top = 76
+      Width = 451
+      Height = 13
+      AutoSize = False
+      Caption = #1056#1091#1089#1089#1082#1080#1081' ('#1056#1086#1089#1089#1080#1103')'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6710886
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 8
+      Top = 95
+      Width = 414
+      Height = 18
+      AutoSize = False
+      Caption = #1050#1072#1083#1077#1085#1076#1072#1088#1100
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 8
+      Top = 112
+      Width = 441
+      Height = 13
+      AutoSize = False
+      Caption = #1054#1090#1086#1073#1088#1072#1078#1072#1077#1090' '#1084#1077#1089#1103#1095#1085#1099#1081' '#1082#1072#1083#1077#1085#1076#1072#1088#1100' '#1074#1084#1077#1089#1090#1077' '#1089' '#1089#1077#1075#1086#1076#1085#1103#1096#1085#1077#1081' '#1076#1072#1090#1086#1081'.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6710886
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Switch_On: TImage
+      Left = 428
+      Top = 95
+      Width = 61
+      Height = 30
+      Center = True
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000340000
+        001C08060000002E879CB0000000017352474200AECE1CE90000000467414D41
+        0000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000004
+        434944415478DADD986F68535714C0CFCB4B6292358DBA06AC84402161E8276B
+        5C36AB1FDCA485C2423F589A62B7565D514B3FC4FD01F745C5E13FC6707F6A1C
+        42A70ED641907DA8FBBAB5CEB6FB208516845AD9A09B74DDB09825FEC94BDE9F
+        FB3C37B96F3C6DD2BE25AF6BF1C0E1BC97E4DD777F39E7DC7BCEE55455851749
+        B89506F2F97C1C1A0B9D8BCE6A422747343B3B3BBBE464570C08412C0CC0CAD4
+        C62CCFA0E8C4145419556256666064D500E93C42276F4775A03A993A1818FD9E
+        30902CAAC0945E8B3AB00593FF5F8174301A48156A754B4B4BB0BBBB7B8FDFEF
+        0F7B3C1EBFD56A75C8B29C4DA7D3F7506EF5F7F77F3F3838F82BFEF621EA631D
+        D802284340DCEB9BE944B4C9E8E31DE0D9985F54EC3999B7E714BB5D521CBCA2
+        7AD6BE5455F3EDE52B3DA1ADA1569EE7ADA59E5314459E9C9C4C747575F5A552
+        A9FBF8519A794C4420C5301003A113A7716DD3A93ED60D017144B5586562B549
+        8AD32691EAC0469FEFFA40E2D4C6DADA80D13F647E7EFE4E474747EFD4D4D4EF
+        789B42CDA04AFA9C2A09C460349035A82EA64E76AFC5BA212804E27999ACB1C9
+        A4CACDDB6A6E5EBBFEC12B8140D0288C26737373134D4D4D3DE8A93906252090
+        BC24D0A663B136E0B818C77161E691B225FF0E85802AC94004811CDCB9FBF187
+        D1B7ABCB1D6F6C6CECEB6834FA195ED2F07B849AD372A928D0E613EFD11F1FA9
+        04E2192042811450732238640546CE7E096E97ABECF12449129A9B9B23D3D3D3
+        74A14842C14B4A512084694573CD2C9802108678DE3B39886EDB0E1FBFF36EC5
+        630E0D0DF5757676C68179490BBB62402368769A0A44C34D9440CD0870617F0F
+        3486C2158F4997F386868683784973298D40622920BA995594330B8168B821D0
+        930C8C9EF91CBC6BD7553C66369B4D05028146BC9C45FD078172A5804CDF6955
+        963FEA1301EE5EFCC6B47171A30E33A0E40A001542EE6EFCAA9940DBD0FC094B
+        7888EEC00E7381580E0902DC38F929D4AE7FB9E231054178100C06DFC4CBBF60
+        891C327F51D0AD7217BA0E41E3D6572B1E1337D85FC2E1F00130B0CABD85E607
+        5381E83BE4421EEDD91286D3262CDBA3A3A3E7DADBDBBF82C23E94D1CA9F521B
+        EB59341F990A4468D8C9E0C4D7FE74E21CAC77975D2880288A0FDBDADA768F8F
+        8FFF01850A5C5CB452A0B2E9F891089AA358FA84C0849CCA871D7A8988A27460
+        FBAED4D1D6BDDE72C79A9898F8241289F401ABBA0DD572F92F97A9DAB64AC47D
+        FBC79BE7FD3EDF6BFF15062BEE9FEBEBEBF73118E3D57611B0E7FB21BD1A927C
+        3F242A365467437D68C3E58B97BEF0D6D4EC30FA7C32991C89C56287878787FF
+        D6C118EF87CC165DC74ABDECC47BCFC0C0C0FB757575872C168BBDD473841071
+        6666E612F642E711406BEE6845535EC7BA4C50FF9E29F4F6F6FAB11DD8EBF57A
+        DF70B95C01EC5EDDD8A53ECA6432BF61880D271289EFE2F1F83D586D670ACF81
+        69E1ABCFCFC54E7D2476BFBA4E7D8A8015CB4F4DB473B9FCD9DCAA3E975B2E79
+        E1809E022D086FE7AC2BBDB20000000049454E44AE426082}
+      OnClick = Switch_OnClick
+    end
+    object Switch_Off: TImage
+      Left = 428
+      Top = 95
+      Width = 61
+      Height = 30
+      Center = True
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000340000
+        001C08060000002E879CB0000000017352474200AECE1CE90000000467414D41
+        0000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000003
+        F34944415478DADD98DD4B937114C77F3E6E731375B6506A8E9590605E294817
+        6984DE8B17A183BCF0225F0819A11751D01F5017895EE82A74BE80A16217B250
+        302A8426364CFF800D04150D146473CC39F7D2F7ACDF63DB74EA5E74CB0387E7
+        D978F63BCFE7F99EF3DB394F06BB629691EA1B4809905AADA6EB3260028E42C4
+        EF02707F2010F0D3F9E6E666206D81002270884CB894BB847FCEE0303EB8177E
+        C8DD477000F3A70D1029C241E8E665707947478756A7D33D2E2828A8C9CECEBE
+        93999999EBF3F9F65C2E976D7B7BFBFBC4C4C4C7BEBEBE355CEB867B0892835D
+        AA62C7804260480D8546A3518E8D8D75151717B70B82208BB690DFEFF7ACAEAE
+        BE6F6A6AEADED8D8B0E3AB7DF8E165431D032A2A2A12D32BBBA6A6E6466F6FEF
+        3B954AF5E0BC0BEEECEC98DBDBDB9F2D2D2DFDC603D8871F424D5F0CF7148870
+        4A5DAAD180CD663BF3C18401F19A09C2C0952B2B2BC348B187B13E2528F4B3AA
+        AAAA0B307B1CCA8B75CF5B532248646D1ED5E76960614050876A464130269349
+        5F5151F13C5618D1464646B6E7E6E6F2251289140A3140C5BB54A8B901F40BC7
+        3746A3D1742A10AF1DAA91BCCACACA5B9393935F6532595EBC911D0E07D3EBF5
+        545B0C504120AC9F0C28D15E0F0E0EBE3C0D88D28D524D353E3EFEB4BABAFA45
+        A211FBFBFB99D96C6652A994914A490622AB03D4E7138178BAE5C20B2D168B11
+        80F7138DB6B8B8C87A7A7A585656164B62DA85DA0F00856D58A140946E4AF84D
+        ABD5FA4DA1505C4F341A763C86FF2F86D40DAA7401406E0029A20165E1708D4E
+        B14B2D252B62434343502131ED926D000ACBE34820155C0320CB5501228534D8
+        E7BFC8E5F2FC4483EDEEEEB2B6B6B68B04F202481A0D48AC21F5C2C2C207AD56
+        7B2FD168B4297477771F015DF6A670B4CB8D8E8E76D4D6D6EA138D663018D8FC
+        FCFC45EE720D009A8A0644F9403B86AAB4B4B4647676D684A7AA88358268E8C2
+        596B6B6BF05C5427C9403D80E98CFC32B253A03A0AAA8471A013FDD89378A30D
+        0F0F3B66666672A08E90C44E8146120BBC77686868F2A40BA2F572F930357A31
+        03402B628D8AFF316B5D5DDD5B8FC7B3030827600E703C4FC71DDA6153337AC0
+        FE8E212EEEF49946125FB406F5B46E3BBFACACEC3666A13E74DC77CF0BB3B5B5
+        656B6C6C7CB5BEBEBE81B51C29EDB6B94A544B32AE94124A15A273D6979797EB
+        50D892680B617AF52E2F2F4F3537371B9C4E27296387BBF11B4F1CF310E32A25
+        360F7195C48935387AC373E079F5F5F5252D2D2D8F683B572A955AD485DCEBF5
+        BAED76FB1ACC323030F0697A7ADA8A6B1D7027E3A378CA27D608A8A3770A5C31
+        053FA7B414D8BF5CA79BDFE79E5EEF1422C0841030093BFBAD8F3704247DDEFA
+        9C00262A46D79FF85E8E8EA950242EA0FFC9FE00C16BC42C36D1989100000000
+        49454E44AE426082}
+      Visible = False
+      OnClick = Switch_OffClick
+    end
+    object Label10: TLabel
+      Left = 8
+      Top = 166
+      Width = 432
+      Height = 13
+      AutoSize = False
+      Caption = #1055#1088#1086#1094#1077#1085#1090#1072#1093
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6710886
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label11: TLabel
+      Left = 8
+      Top = 149
+      Width = 473
+      Height = 18
+      AutoSize = False
+      Caption = #1055#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1075#1086#1076#1086#1074#1091#1102' '#1087#1088#1086#1090#1103#1078#1077#1085#1085#1086#1089#1090#1100' '#1074
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label12: TLabel
+      Left = 8
+      Top = 131
+      Width = 113
+      Height = 13
+      AutoSize = False
+      Caption = #1044#1054#1055#1054#1051#1053#1048#1058#1045#1051#1068#1053#1054
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 7372329
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Panel8: TPanel
+      Left = 0
+      Top = 0
+      Width = 489
+      Height = 34
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 7372329
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Roboto'
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentFont = False
+      ShowCaption = False
+      TabOrder = 0
+      OnMouseDown = Panel2MouseDown
+      object Label3: TLabel
+        Left = 32
+        Top = 5
+        Width = 405
+        Height = 23
+        AutoSize = False
+        Caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+        OnMouseDown = Label4MouseDown
+      end
+      object Panel9: TPanel
+        Left = 460
+        Top = 0
+        Width = 29
+        Height = 34
+        Align = alRight
+        BevelOuter = bvNone
+        Color = 7372329
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Material Icons'
+        Font.Style = [fsBold]
+        ParentBackground = False
+        ParentFont = False
+        ShowCaption = False
+        TabOrder = 0
+        OnClick = Panel3Click
+        object Image9: TImage
+          Left = 0
+          Top = 0
+          Width = 29
+          Height = 34
+          Align = alClient
+          Center = True
+          Enabled = False
+          Picture.Data = {
+            0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+            00210806000000C3026B9D000000017352474200AECE1CE90000000467414D41
+            0000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000000
+            D94944415478DA63FCFFFF3F032D01E3A805A3168C5A30B016B000F164209E08
+            C437F0980152D70EC4BD40FC82140B7C8078335493230E4B40862F07E210205E
+            00C489A406510110F7E3B004D9F02340EC09C45F48B500972544194EAC05E896
+            B802713D3186936201B2257FA03E206838A916800C3D0DC40650BE29109F21A4
+            89580B90C3FC0E10AB30E04F5D2459802D42531870A72E922CC0975A0A88B184
+            504E269414095A82CF021B20DE0FC42718F0A716982533803893D42072815A80
+            372932408A951D0C90244C92051483510B462D18B5800E16000060C4A0BFC36F
+            607F0000000049454E44AE426082}
+          Transparent = True
+          ExplicitLeft = -1
+          ExplicitWidth = 12
+        end
+      end
+      object Panel10: TPanel
+        Left = 443
+        Top = 0
+        Width = 17
+        Height = 34
+        Align = alRight
+        BevelOuter = bvNone
+        Color = 7372329
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Material Icons'
+        Font.Style = [fsBold]
+        ParentBackground = False
+        ParentFont = False
+        ShowCaption = False
+        TabOrder = 1
+        OnClick = Panel4Click
+        object Image10: TImage
+          Left = 0
+          Top = 0
+          Width = 17
+          Height = 34
+          Align = alClient
+          Center = True
+          Enabled = False
+          Picture.Data = {
+            0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+            0022080600000045961933000000017352474200AECE1CE90000000467414D41
+            0000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000000
+            4E4944415478DAEDCDB10D00101040513661139B3182B18C6104A5EE5C610097
+            5048FE4F7EFDBC88B8977900000000809F81B43F6DE8D502143D1B80AE470B10
+            F6A74DBD59806B0100000000DC680141E16BBD5501C0BA0000000049454E44AE
+            426082}
+          Transparent = True
+          ExplicitLeft = -1
+          ExplicitWidth = 12
+        end
+      end
+      object Panel11: TPanel
+        Left = 0
+        Top = 0
+        Width = 29
+        Height = 34
+        Align = alLeft
+        BevelOuter = bvNone
+        Color = 7372329
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Material Icons'
+        Font.Style = [fsBold]
+        ParentBackground = False
+        ParentFont = False
+        ShowCaption = False
+        TabOrder = 2
+        OnClick = Panel11Click
+        object Image11: TImage
+          Left = 0
+          Top = 0
+          Width = 29
+          Height = 34
+          Align = alClient
+          Center = True
+          Enabled = False
+          Picture.Data = {
+            0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+            00180806000000E0773DF8000000017352474200AECE1CE90000000467414D41
+            0000B18F0BFC6105000000097048597300000EC200000EC20115284A80000000
+            A84944415478DA63FCFFFF3F032D01E3A80543D2820A205E00C42F6861413F10
+            1700F106200EA4B60530C36F00B123B57D4096E1C45A40B6E1C4584091E1842C
+            80190E023380F82511E63D6080A43082161800F169206621D1C107A03E25CA07
+            2140BC1C6A492D101F21C2820F407C81580B902DF901C49E445A820288494514
+            59426C3E20DB125272325996905A16C12C5902C489B4B000046C80F80410FFA1
+            95052481510B0802006CF271D1F711C2910000000049454E44AE426082}
+          Transparent = True
+          ExplicitLeft = 6
+          ExplicitTop = -6
+        end
+      end
+    end
+    object UpDown1: TUpDown
+      Left = 450
+      Top = 162
+      Width = 34
+      Height = 17
+      Max = 1
+      Orientation = udHorizontal
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Wrap = True
+      OnChangingEx = UpDown1ChangingEx
+    end
+    object Panel12: TPanel
+      Left = 112
+      Top = 192
+      Width = 267
+      Height = 82
+      BevelKind = bkFlat
+      BevelOuter = bvNone
+      Caption = 'Panel12'
+      Color = clGray
+      ParentBackground = False
+      ShowCaption = False
+      TabOrder = 2
+      Visible = False
+      object NotifyText: TLabel
+        Left = 8
+        Top = 8
+        Width = 249
+        Height = 65
+        AutoSize = False
+        Caption = #1059#1074#1077#1076#1086#1084#1083#1077#1085#1080#1077' '#1086#1073' '#1086#1096#1080#1073#1082#1077
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -12
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        WordWrap = True
+      end
+    end
+    object UpDown2: TUpDown
+      Left = 450
+      Top = 64
+      Width = 34
+      Height = 17
+      Max = 1
+      Orientation = udHorizontal
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+      Wrap = True
+      OnChangingEx = UpDown2ChangingEx
+    end
+  end
   object Timer1: TTimer
-    Interval = 300
+    Interval = 50
     OnTimer = Timer1Timer
-    Left = 272
-    Top = 264
+    Left = 336
+    Top = 40
   end
   object Timer2: TTimer
     Enabled = False
     Interval = 20
     OnTimer = Timer2Timer
-    Left = 96
-    Top = 232
+    Left = 296
+    Top = 40
   end
   object Timer3: TTimer
     Enabled = False
     Interval = 20
     OnTimer = Timer3Timer
-    Left = 176
-    Top = 232
+    Left = 208
+    Top = 40
+  end
+  object Timer4: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer4Timer
+    Left = 376
+    Top = 120
+  end
+  object Timer5: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer5Timer
+    Left = 440
+    Top = 140
+  end
+  object Taskbar1: TTaskbar
+    TaskBarButtons = <>
+    ProgressState = Normal
+    ProgressMaxValue = 365
+    TabProperties = []
+    Left = 144
+    Top = 40
+  end
+  object Timer6: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = Timer6Timer
+    Left = 432
+    Top = 224
   end
 end
